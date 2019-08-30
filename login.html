@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="js/login.js" type="text/javascript" crossorigin="anonymous"></script>
+	<link type="text/css" href="css/login.css" rel="stylesheet" />
+    <title>Mercury Test login form</title>
+	<style>
+	@font-face {
+		font-family: 'Gotham';
+		src: url('fonts/GothaProReg.otf')  format('opentype');
+	}
+	@font-face {
+		font-family: 'Gotham';
+		src: url('fonts/GothaProLig.otf') format('opentype');
+		font-weight:300;
+	}
+	
+	@font-face {
+		font-family: 'GothamBook';
+		src: url('fonts/GothamBook.ttf')  format('truetype');
+	}
+	@font-face {
+		font-family: 'GothamBook';
+		src: url('fonts/GothamLight.ttf') format('truetype');
+		font-weight:300;
+	}
+	</style>
+</head>
+<body>
+	<div class="page">
+		<div id="center">
+		<div class="logo">
+		</div>
+		<div class="loginForm">
+			<div id="user" class="invisible">
+				<div><img id="avatar" src="" /></div>
+				<div id="name">No name</div>
+				<input id="outBtn" type="button" value="Logout" onclick="LogOut();"/>
+			</div>
+			<div id="login">
+				<div class="header">Log In</div>
+	
+				<input id="email" placeholder="e-mail" value="user@example.com" />
+				<input id="passw" placeholder="password" value="mercdev"/>
+				<input id="errorMessage" class="invisible"/>
+				
+				<!--textarea id="response" ></textarea-->
+				<input id="inBtn" type="button" value="Login" onclick="javascript:LogIn();" />
+				
+		
+			</div>
+		</div><!-- // #loginForm -->
+		</div><!-- // #center -->
+	</div>
+</body>
+</html>
+
+
