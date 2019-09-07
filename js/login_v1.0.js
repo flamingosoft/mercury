@@ -40,7 +40,7 @@ function POST(url, query, callback)
 			callback(obj);
 			return;
         }
-		return;
+
     };
 	xmlhttp.ontimeout = function() {
 		obj = {
@@ -49,7 +49,7 @@ function POST(url, query, callback)
 			value: {} 
 		};
 		callback(obj);
-	}
+	};
 	xmlhttp.onerror = function() {
 		obj = {
 			status: xmlhttp.status, 
@@ -57,7 +57,7 @@ function POST(url, query, callback)
 			value: {} 
 		};
 		callback(obj);		
-	}
+	};
     xmlhttp.send(query); // Отправляем POST-запрос
 }
 
@@ -118,7 +118,7 @@ function SetErrorMsgView(message = null)
 		var removeWrong = function() { 
 			RemoveClass("email", "wrong");
 			RemoveClass("passw", "wrong"); 
-		}
+		};
 		
 		email.onfocus = removeWrong;
 		passw.onfocus = removeWrong;
